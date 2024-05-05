@@ -1,0 +1,97 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(175, 164, 215);
+}
+
+button:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.repeat-container, .qst-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.qst-container {
+  width: 600px;
+  background-color: #127277;
+  text-align: center;
+}
+
+.repeat-container {
+  color: #fff;
+  background-color: #0c4b4e;
+  width: 600px;
+  height: 600px;
+  justify-content: space-between;
+  font-size: 22px;
+  padding: 0px 15px;
+}
+
+.repeat-list-container {
+  width: 100%;
+  height: 500px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rebeccapurple green;
+}
+
+.count-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.clear-btn {
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 22px;
+  background-color: #8e8e8e;
+}
+
+.text {
+  width: 100%;
+  padding: 20px;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.button, .button-repeat, .clear-list-btn {
+  width: 150px;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 25px;
+  font-size: 22px;
+  background-color: #d564dd;
+}
+
+.yes-btn, .no-btn {
+  padding: 20px 40px;
+  border-radius: 20px;
+  background-color: greenyellow;
+}
+
+.no-btn {
+  background-color: rgb(229, 52, 52);
+}
+
+.done-qst {
+  font-size: 40px;
+}
