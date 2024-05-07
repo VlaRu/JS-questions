@@ -8,3 +8,5 @@
 - you can add question in repeat list
 - you can clean repeat list and count
 - you can display questions from repeat list
+
+  ### Deployments [link](https://vlaru.github.io/JS-questions/index.html)

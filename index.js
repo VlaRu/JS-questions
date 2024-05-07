@@ -29,6 +29,7 @@ function clearListEl() {
 function addCount() {
   count++
   doneQst.innerHTML = count;
+  getRandom();
 }
 
 function clearCount() {
@@ -40,10 +41,9 @@ function clearCount() {
 function addToList() {
   const listElement = document.createElement('li')
   listContainer.appendChild(listElement);
-  listElement.innerText = getRandom();
+  listElement.innerText = p.innerText;
   listElement.className = 'list-element'
 }
-
 
 
 function getRandom() {
@@ -66,4 +66,3 @@ function repeatListQst() {
   p.innerText = randomElement.innerText;
   listContainer.removeChild(randomElement)
 }
-
