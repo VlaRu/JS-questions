@@ -1,10 +1,13 @@
 import {questions} from "./data.js";
+import {questions2} from "./data2.js";
+
 
 const p = document.getElementById('root');
 const btn = document.querySelector('.button');
 const listContainer = document.querySelector('.repeat-list-container');
 const btnYes = document.querySelector('.yes-btn');
 const btnNo = document.querySelector('.no-btn');
+const btnNewQst = document.querySelector('.NewQst');
 const doneQst = document.querySelector('.done-qst');
 const clearBtn = document.querySelector('.clear-btn');
 const clearList = document.querySelector('.clear-list-btn');
@@ -20,6 +23,7 @@ btnYes.addEventListener('click', addCount);
 clearBtn.addEventListener('click', clearCount);
 clearList.addEventListener('click', clearListEl);
 repeatList.addEventListener('click', repeatListQst);
+btnNewQst.addEventListener('click', getNewQst);
 
 function clearListEl() {
   while (listContainer.firstChild) {
@@ -29,7 +33,7 @@ function clearListEl() {
 function addCount() {
   count++
   doneQst.innerHTML = count;
-  getRandom();
+  // getRandom();
 }
 
 function clearCount() {
@@ -44,7 +48,13 @@ function addToList() {
   listElement.innerText = p.innerText;
   listElement.className = 'list-element'
 }
-
+let indx = 0;
+function getNewQst(){
+  const length = Object.keys(questions2).length;
+  indx ++;
+  p.innerText = questions2[indx];
+  return questions2[indx]
+}
 
 function getRandom() {
   const length = Object.keys(questions).length;

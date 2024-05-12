@@ -1,7 +1,9 @@
 export const questions = {
   '1': 'What are the possible ways to create objects in JavaScript',
   '2': 'What is a prototype chain',
+  // При попытке доступа к свойству объекта свойство будет искаться не только в объекте, но и в прототипе объекта, прототипе прототипа и т. д., пока либо не будет найдено свойство с совпадающим именем, либо не будет найден конец. цепочки прототипов достигнуто
   '3': 'What is the difference between Call, Apply and Bind',
+  // call : принимает аргументы индивидуально в виде списка, разделенного запятыми. apply : принимает аргументы как массив или объект, подобный массиву. привязка: можно предварительно задать аргументы при создании новой функции, но при вызове новой функции можно передать дополнительные аргументы.
   '4': 'What is JSON and its common operations',
   '5': 'What is the purpose of the array slice method',
   '6': 'What is the purpose of the array splice method',

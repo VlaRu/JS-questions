@@ -73,7 +73,7 @@ button:hover {
   font-weight: 600;
 }
 
-.button, .button-repeat, .clear-list-btn {
+.button, .button-repeat, .clear-list-btn, .NewQst {
   width: 150px;
   margin-top: 50px;
   padding: 20px;
