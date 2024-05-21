@@ -7,7 +7,12 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <h1>JS Questions for technical interview</h1>
+  <div class="main-container">
+    <h1>JS Questions for technical interview</h1>
+  <div class="modal-window">
+    <div class="close-modal">X</div>
+    <div class="modal-answer"></div>
+  </div>
   <div class="container">
     <div class="repeat-container">
       <p>repeat list</p>
@@ -19,19 +24,23 @@
     </div>
     <div class="qst-container">
       <div id="root"></div>
-      <button class="button">Next</button>
-      <button class="NewQst">NewQst</button>
+      <div>
+        <button class="button">CoreJS</button>
+        <button class="NewQst">CoreJS2</button>
+      </div>
       <p>Do you know answer?</p>
       <div class="choose-container">
         <button class="yes-btn">Yes</button>
         <button class="no-btn">No</button>
       </div>
       <div class="count-container">
+        <div class="btn-watch"><div class="eye"></div></div>
         <h2>Count answers</h2>
         <div class="done-qst">0</div>
         <button class="clear-btn">clear</button>
       </div>
     </div>
+  </div>
   </div>
   <script type="module" src="./index.js"></script>
 </body>
